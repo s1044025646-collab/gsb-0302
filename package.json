@@ -1,0 +1,23 @@
+{
+  "name": "slotted-aloha-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "时隙 ALOHA 竞争传输与碰撞回放后端（教学用离散事件模型，仅 API 与 CLI）",
+  "bin": {
+    "aloha": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test --test-reporter=spec tests/**/*.test.mjs",
+    "start": "node dist/cli.js serve",
+    "demo": "node dist/cli.js demo"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=23.6.0"
+  }
+}
